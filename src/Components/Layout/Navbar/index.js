@@ -83,10 +83,15 @@ const Navbar = () => {
                             <FaUserCircle/>
                         </UserIcon>
                         <MenuContainer active={active} ref={logoutPopoverRef}>
+                            {userRole === ADMIN &&
+                                <>
+                                <LogoutButton onClick={userAccountHandler}>User Accounts</LogoutButton>
+                                <br />
+                                <br />
+                                </>
+                            }
                             <LogoutButton onClick={logoutHandler}>Log out</LogoutButton>
-                            <br />
-                            <br />
-                            <LogoutButton onClick={userAccountHandler}>User Accounts</LogoutButton>
+
                         </MenuContainer>
                     </UserIconContainer>
                 </NavbarContainer>

@@ -10,6 +10,8 @@ export const FormContainer = styled.div`
 export const Form = styled.form`
     display: flex;
     justify-content: center;
+    flex-direction: ${({ isColumn }) => isColumn && 'column'};
+    align-items: center;
     width: 100%;
     height: 30px;
 `

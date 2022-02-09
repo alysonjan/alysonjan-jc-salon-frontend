@@ -7,6 +7,7 @@ export const Select = styled.select`
     font-size: 20px;
     border-radius: 5px;
     margin: ${({ margin }) => margin};
+    margin-right: ${({ marginRight }) => marginRight};
     border: solid 3px
         ${({
         theme: {

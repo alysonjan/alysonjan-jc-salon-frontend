@@ -8,6 +8,7 @@ import { Button } from '../../Components/Shared/Button';
 import axiosInstance from '../../Helpers/Axios';
 import { HairColorMainContainer } from './Styles';
 import { SuccessMsg, SuccessMsgContainer } from '../../Components/Shared/SuccessMessage';
+import { Form, FormContainer } from '../../Components/Shared/Form';
 
 const HairProductPage = () => {
 
@@ -79,27 +80,25 @@ const HairProductPage = () => {
                 <SuccessMsg>{messageBox}</SuccessMsg>
             </SuccessMsgContainer>
             }
-            <form onSubmit={onSubmitHandler}>
-                <HairColorMainContainer>
-                            <Select margin='20px' name='hairbrand' value={hairbrand} onChange={e => onChange(e)} required>
+            <HairColorMainContainer>
+                    <FormContainer>
+                        <Form onSubmit={onSubmitHandler} isColumn>
+                            <Select name='hairbrand' value={hairbrand} onChange={e => onChange(e)} margin='10px' required>
                                 <Option value=''>choose brand</Option>
                                     {HBrands.map((val, index)=> {
-                                        return (
-                                            <Option key={index}>{val}</Option>
-                                        )
+                                        return (<Option key={index}>{val}</Option>)
                                     })}
-                            </Select>
-                            <Select  margin='10px' name='colornumber' value={colornumber} onChange={e => onChange(e)} required>
+                                </Select>
+                            <Select name='colornumber' value={colornumber} onChange={e => onChange(e)} margin='10px 0 40px 0' required>
                                 <Option value=''>color #</Option>
                                 {colorNum.map((val)=> {
-                                        return (
-                                            <Option key={val._id}>{val.colornumber}</Option>
-                                        )
-                                    })}
+                                    return (<Option key={val._id}>{val.colornumber}</Option>)
+                                })}
                             </Select>
                             <Button type="submit" value="submit" fontSize="1rem">submit</Button>
-                    </HairColorMainContainer>
-            </form>
+                        </Form>
+                    </FormContainer>
+            </HairColorMainContainer>
         </MainPageContainer>
         
     ) 

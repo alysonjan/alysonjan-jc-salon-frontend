@@ -5,12 +5,13 @@ import { TableContainer } from '../../Components/Shared/Table'
 import ServiceTable from '../../Components/Tables/ServiceTable'
 import { MainPageContainer } from '../../Components/Shared/MainPageContainer'
 import dayjs from 'dayjs'
-import { Input, Option, Select } from '../../Components/Shared/SelectOption'
+import { Option, Select } from '../../Components/Shared/SelectOption'
 import { Title, TitleContainer } from '../../Components/Shared/Title'
 import { Form, FormContainer } from '../../Components/Shared/Form'
 import { DateContainer } from '../../Components/Shared/Date'
 import axiosInstance from '../../Helpers/Axios'
 import { SuccessMsg, SuccessMsgContainer } from '../../Components/Shared/SuccessMessage'
+import { StyledInput } from '../../Components/Shared/StyledInput'
 
 const ServicePage = () => {
     var date = dayjs().format('dddd, MMMM DD, YYYY');
@@ -77,7 +78,7 @@ const ServicePage = () => {
             }
             <FormContainer>
                 <Form onSubmit={onSubmitHandler}>
-                    <Select name='servicetype' value={servicetype} onChange={e => onChange(e)} required>
+                    <Select marginRight='10px' name='servicetype' value={servicetype} onChange={e => onChange(e)} required>
                         <Option value='' disabled>Choose service</Option>
                         <Option value='Nail/hand'>Nail/hand</Option>
                         <Option value='Nail/color'>Nail/color</Option>
@@ -98,7 +99,7 @@ const ServicePage = () => {
                         <Option value='Others'>Others</Option>
                     </Select>
                     
-                    <Select name='employeename' value={employeename} onChange={e => onChange(e)} required>
+                    <Select marginRight='10px' name='employeename' value={employeename} onChange={e => onChange(e)} required>
                     <Option value='' disabled>employee name</Option>
                     {data.map((val) => {
                         return (
@@ -107,7 +108,7 @@ const ServicePage = () => {
                     })}
                     </Select>
 
-                    <Input placeholder='amount' type='Number' name='amount' value={amount} onChange={e => onChange(e)} required />
+                    <StyledInput marginRight='10px' placeholder='amount' type='Number' name='amount' value={amount} onChange={e => onChange(e)} required />
 
                     <Button type="submit" value="submit" fontSize="1rem">submit</Button>
                 </Form>
