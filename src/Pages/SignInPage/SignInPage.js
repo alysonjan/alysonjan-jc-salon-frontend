@@ -98,7 +98,7 @@ const SignInPage = () => {
                 <Spacer size="0.75rem" />
                 </AuthContentForm>
                 <AuthCardFooter>
-                    Contact us&nbsp;<AuthCardFooterEmail>dualipa@gmail.com</AuthCardFooterEmail>
+                    Contact us&nbsp;<AuthCardFooterEmail>alysonjan@gmail.com</AuthCardFooterEmail>
                 </AuthCardFooter> 
             </AuthCardContainer>
                 <AuthCardClipArtContainer>
