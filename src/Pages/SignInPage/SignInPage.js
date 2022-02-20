@@ -2,8 +2,6 @@ import React, { useContext, useState } from 'react'
 import { AuthContext } from '../../Helpers/AuthProvider'
 import { UserRoleContext } from '../../Helpers/UserRoleProvider';
 
-import LoginClipArt from '../../Assets/image_1.png';
-import Logo from '../../Assets/logo.PNG';
 import {
     MainAuthPageContainer,
     AuthCardContainer,
@@ -12,11 +10,10 @@ import {
     AuthContentForm,
     AuthCardFooter,
     AuthCardFooterEmail,
-    AuthCardClipArtContainer,
     AuthPagesErrorMsgContainer,
     ErrorMsg
 } from './Styles'
-import {StyledInput} from '../../Components/Shared/StyledInput'
+import { LoginStyledInput } from '../../Components/Shared/StyledInput'
 import Spacer from '../../Components/Shared/Spacer'
 import { Button } from '../../Components/Shared/Button'
 import { saveItem } from '../../Utils/sessionStorage';
@@ -68,12 +65,11 @@ const SignInPage = () => {
     }
     return (
         <MainAuthPageContainer>
-            <AuthCardContainer width="75%">
-                <img src={Logo} alt="" width="20%" />
-                <AuthCardTitle>LOGIN</AuthCardTitle>
-                <AuthCardSubtitle>To get access to your files</AuthCardSubtitle>
+            <AuthCardContainer width="100%">
+                <AuthCardTitle>JC SALON SYSTEM</AuthCardTitle>
+                <AuthCardSubtitle>Login to get access to your files</AuthCardSubtitle>
                 <AuthContentForm onSubmit={onLoginHandler} >
-                <StyledInput
+                <LoginStyledInput
                     type="text"
                     name = "username"
                     placeholder="username"
@@ -82,7 +78,7 @@ const SignInPage = () => {
                     required
                 />
                 <Spacer size="1.375rem" />
-                <StyledInput
+                <LoginStyledInput
                     required
                     type="password"
                     name="password"
@@ -94,16 +90,13 @@ const SignInPage = () => {
                 <AuthPagesErrorMsgContainer>
                     <ErrorMsg>{errMsg}</ErrorMsg>
                 </AuthPagesErrorMsgContainer>
-                <Button type="submit" value="LOGIN" fontSize="1.125rem" width="278px" fontWeight="600">LOGIN</Button>
+                <Button type="submit" value="LOGIN" fontSize="1.125rem" width="250px" height="40px" fontWeight="300">LOGIN</Button>
                 <Spacer size="0.75rem" />
                 </AuthContentForm>
                 <AuthCardFooter>
                     Contact us&nbsp;<AuthCardFooterEmail>alysonjan@gmail.com</AuthCardFooterEmail>
                 </AuthCardFooter> 
             </AuthCardContainer>
-                <AuthCardClipArtContainer>
-                <img src={LoginClipArt} alt="" width="100%" />
-                </AuthCardClipArtContainer>
         </MainAuthPageContainer>
     )
 }

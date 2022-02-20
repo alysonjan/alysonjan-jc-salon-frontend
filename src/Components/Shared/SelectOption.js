@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Select = styled.select`
     width: 250px;
     height: 115%;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 5px;
     margin: ${({ margin }) => margin};
     margin-right: ${({ marginRight }) => marginRight};

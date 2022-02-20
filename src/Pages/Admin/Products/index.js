@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../../../Components/Layout/Navbar';
 import { MainPageContainer } from '../../../Components/Shared/MainPageContainer'
-import { Title, TitleContainer } from '../../../Components/Shared/Title';
+import Spacer from "../../../Components/Shared/Spacer";
 import { Button } from '../../../Components/Shared/Button'
 import { TableContainer } from '../../../Components/Shared/Table';
 import ProductTable from '../../../Components/Tables/Admin/ProductTable';
@@ -47,9 +47,7 @@ const Products = () => {
     return (
         <MainPageContainer>
             <Navbar/>
-            <TitleContainer>
-                <Title>Products</Title>
-            </TitleContainer>
+            <Spacer size="3.75rem" />
             {alert &&
             <SuccessMsgContainer>
                 <SuccessMsg>{messageBox}</SuccessMsg>

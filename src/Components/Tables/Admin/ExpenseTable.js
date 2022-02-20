@@ -64,13 +64,14 @@ const ExpenseTable = () => {
                         backgroundColor: '#EEE',
                         },
                         headerStyle: {
-                            backgroundColor: '#f0c6c6',
-                            color: '#333333'
+                            backgroundColor: '#B6BEC1',
+                            color: '#333333',
+                            fontWeight: '600',
                         }
                     }}
                     columns={[
                         {
-                            title: 'EXPENSE', field: 'expense',
+                            title: 'EXPENSE (amount)', field: 'expense',
                         },
                         {
                             title: 'TYPE', field: 'expensetype',

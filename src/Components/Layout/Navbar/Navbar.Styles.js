@@ -3,12 +3,15 @@ import { Link as LinkRouter } from 'react-router-dom';
 
 
 export const Nav = styled.nav`
-    background: #C83737;
+    background: ${({
+        theme: {
+            colors: { PRIMARY_1 },
+        },
+    })=> PRIMARY_1};
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -34,6 +37,14 @@ export const NavLogo = styled.div`
     margin-left:24px;
     font-weight:bold;
     text-decoration:none;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `
 
 
@@ -59,6 +70,18 @@ export const NavLinks = styled(LinkRouter)`
     height: 100%;
     cursor: pointer;
 
+    @media screen and (max-width: 1024px) {
+        font-size: 1rem;
+        position: relative;
+        right: 70%;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 0.80rem;
+        position: relative;
+        right: 5%;
+    }
+
 `;
 
 export const UserIconContainer = styled.div`
@@ -74,6 +97,10 @@ export const UserIcon = styled.div`
     font-size: 2.25rem;
     cursor: pointer;
     color: #fff;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
 `;
 
 export const MenuContainer = styled.div`
@@ -100,6 +127,7 @@ export const MenuContainer = styled.div`
     background: #dddbdb;
     transform:rotate(45deg)
 }
+
 `
 
 export const LogoutButton = styled.button`

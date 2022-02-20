@@ -20,21 +20,13 @@ export const AuthCardContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     z-index: 10;
-    background: ${({
-        theme: {
-            colors: { WHITE_2 },
-        },
-    })=> WHITE_2};
-`;
-
+    background: rgb(25,2,40);
+    background: linear-gradient(90deg, rgba(25,2,40,1) 0%, rgba(2,0,36,1) 0%, rgba(40,3,42,1) 44%, rgba(121,9,56,1) 100%, rgba(0,212,255,1) 100%);
+`
 export const AuthCardTitle = styled.div`
     font-size: 2rem;
     font-weight: 600;
-    color: ${({
-    theme: {
-        colors: { PRIMARY_1 },
-    },
-    }) => PRIMARY_1};
+    color:#ffff;
     margin-top: 1.875rem;
 `;
 
@@ -43,11 +35,7 @@ export const AuthCardSubtitle = styled.div`
     font-weight: 500;
     margin-top: 0.313rem;
     margin-bottom: 3.438rem;
-    color: ${({
-        theme: {
-        colors: { PRIMARY_1 },
-        },
-    }) => PRIMARY_1};
+    color:#ffff;
 `;
 
 export const AuthContentForm = styled.form`
@@ -56,6 +44,7 @@ export const AuthContentForm = styled.form`
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     flex-direction: column;
 `;
 
@@ -64,23 +53,19 @@ export const AuthCardFooter = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    background-color: #E5E5E5;
-    border-top: 1px solid #ddd;
     padding: 1.375rem 0;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     font-weight: 300;
+    color:#ffff;
 `;
 
 export const AuthCardFooterEmail = styled.div`
     text-decoration: underline;
     font-weight: 200;
+    color:#ffff;
 `;
 
-export const AuthCardClipArtContainer = styled.div`
-    width: 100%;
-    display: flex;
-`;
 
 export const AuthPagesErrorMsgContainer = styled.div`
     margin-top: ${({ marginTop }) => marginTop};
@@ -88,5 +73,5 @@ export const AuthPagesErrorMsgContainer = styled.div`
 `;
 
 export const ErrorMsg = styled.small`
-    color: red;
+    color: #ffffff;
 `;

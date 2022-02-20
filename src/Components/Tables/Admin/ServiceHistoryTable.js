@@ -68,8 +68,9 @@ const ServiceHistoryTable = () => {
                         backgroundColor: '#EEE',
                         },
                         headerStyle: {
-                            backgroundColor: '#f0c6c6',
-                            color: '#333333'
+                            backgroundColor: '#B6BEC1',
+                            color: '#333333',
+                            fontWeight: '600',
                         }
                     }}
                     columns={[

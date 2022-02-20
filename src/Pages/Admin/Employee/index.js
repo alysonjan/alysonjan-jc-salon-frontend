@@ -4,7 +4,7 @@ import EmployeeTable from '../../../Components/Tables/Admin/EmployeeTable'
 import { Button } from '../../../Components/Shared/Button';
 import { MainPageContainer } from '../../../Components/Shared/MainPageContainer';
 import { TableContainer } from '../../../Components/Shared/Table';
-import { Title, TitleContainer } from '../../../Components/Shared/Title';
+import Spacer from "../../../Components/Shared/Spacer";
 import { Form, FormContainer } from '../../../Components/Shared/Form';
 import { StyledInput } from '../../../Components/Shared/StyledInput';
 import axiosInstance from '../../../Helpers/Axios';
@@ -46,9 +46,7 @@ const Employee = () => {
     return (
         <MainPageContainer>
             <Navbar/>
-            <TitleContainer>
-                <Title>Employees</Title>
-            </TitleContainer>
+            <Spacer size="3.75rem" />
             {alert &&
             <SuccessMsgContainer>
                 <SuccessMsg>{messageBox}</SuccessMsg>
@@ -60,7 +58,7 @@ const Employee = () => {
                     <StyledInput required placeholder='date started' marginRight='10px' type='date' name='datestarted' value={datestarted} onChange={e => onChange(e)} />
                     <StyledInput required placeholder='position' marginRight='10px' name='position' value={position} onChange={e => onChange(e)} />
                     <StyledInput required placeholder='day-off' marginRight='10px' name='dayoff' value={dayoff} onChange={e => onChange(e)} />
-                    <Button type="submit" value="submit" fontSize="1rem" height="2.15rem">Add Employee</Button>
+                    <Button type="submit" value="submit" fontSize="1rem" height="2.15rem">submit</Button>
                 </Form>
             </FormContainer>
 

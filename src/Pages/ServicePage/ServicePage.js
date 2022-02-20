@@ -110,7 +110,7 @@ const ServicePage = () => {
 
                     <StyledInput marginRight='10px' placeholder='amount' type='Number' name='amount' value={amount} onChange={e => onChange(e)} required />
 
-                    <Button type="submit" value="submit" fontSize="1rem">submit</Button>
+                    <Button type="submit" value="submit" height="35px" fontSize="1rem">submit</Button>
                 </Form>
             </FormContainer>
             <TableContainer>

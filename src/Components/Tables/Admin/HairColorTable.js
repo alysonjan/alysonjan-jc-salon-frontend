@@ -73,8 +73,9 @@ const HairColorTable = () => {
                         backgroundColor: '#EEE',
                         },
                         headerStyle: {
-                            backgroundColor: '#f0c6c6',
-                            color: '#333333'
+                            backgroundColor: '#C09D88',
+                            color: '#333333',
+                            fontWeight: '600',
                         }
                     }}
                     columns={[

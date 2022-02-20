@@ -4,7 +4,7 @@ import HairColorTable from '../../../Components/Tables/Admin/HairColorTable'
 import { Button } from '../../../Components/Shared/Button';
 import { MainPageContainer } from '../../../Components/Shared/MainPageContainer';
 import { TableContainer } from '../../../Components/Shared/Table';
-import { Title, TitleContainer } from '../../../Components/Shared/Title';
+import Spacer from "../../../Components/Shared/Spacer";
 import { Form, FormContainer } from '../../../Components/Shared/Form';
 import { StyledInput } from '../../../Components/Shared/StyledInput';
 import axiosInstance from '../../../Helpers/Axios';
@@ -46,9 +46,7 @@ const HairProducts = () => {
     return (
         <MainPageContainer>
             <Navbar/>
-            <TitleContainer>
-                <Title>Hair Color</Title>
-            </TitleContainer>
+            <Spacer size="3.75rem" />
             {alert &&
             <SuccessMsgContainer>
                 <SuccessMsg>{messageBox}</SuccessMsg>

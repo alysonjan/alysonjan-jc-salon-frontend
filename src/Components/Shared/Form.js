@@ -5,6 +5,9 @@ export const FormContainer = styled.div`
     justify-content: center;
     width: 80%;
     margin: auto;
+
+    
+
 `
 
 export const Form = styled.form`

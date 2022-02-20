@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../Components/Layout/Navbar';
 import { MainPageContainer } from '../../Components/Shared/MainPageContainer';
-import { Title, TitleContainer } from '../../Components/Shared/Title';
+import Spacer from '../../Components/Shared/Spacer';
 import { Option, Select } from '../../Components/Shared/SelectOption';
 import { Button } from '../../Components/Shared/Button';
 
@@ -72,9 +72,7 @@ const HairProductPage = () => {
     return(
         <MainPageContainer>
             <Navbar />
-            <TitleContainer>
-                <Title>Hair Color</Title>
-            </TitleContainer>
+            <Spacer size="3.75rem" />
             {alert &&
             <SuccessMsgContainer>
                 <SuccessMsg>{messageBox}</SuccessMsg>

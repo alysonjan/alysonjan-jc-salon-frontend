@@ -6,7 +6,7 @@ import { getNetSaleAction } from "../../../actions/netsale";
 import { getExpenseAction } from "../../../actions/expense";
 
 import { MainPageContainer } from "../../../Components/Shared/MainPageContainer";
-import { Title, TitleContainer } from "../../../Components/Shared/Title";
+import Spacer from "../../../Components/Shared/Spacer";
 import ExpenseTable from "../../../Components/Tables/Admin/ExpenseTable";
 import NetSaleTable from "../../../Components/Tables/Admin/NetSaleTable";
 import {
@@ -57,9 +57,7 @@ const Dashboard = () => {
   return (
     <MainPageContainer>
       <Navbar />
-      <TitleContainer>
-        <Title> Dashboard </Title>
-      </TitleContainer>
+      <Spacer size="3.75rem" />
       <BalanceContainer>
         <BalanceItemContainer>
           <BalanceItem> Balance: {currentBalance.toFixed(2)}</BalanceItem>

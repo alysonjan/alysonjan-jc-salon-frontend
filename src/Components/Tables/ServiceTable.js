@@ -74,7 +74,8 @@ const ServiceTable = () => {
                     },
                     headerStyle: {
                         backgroundColor: '#f0c6c6',
-                        color: '#333333'
+                        color: '#333333',
+                        fontWeight: '600',
                     }
                 }}
                 columns={[
