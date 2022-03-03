@@ -61,9 +61,7 @@ export const AuthCardFooter = styled.div`
 `;
 
 export const AuthCardFooterEmail = styled.div`
-    text-decoration: underline;
-    font-weight: 200;
-    color:#ffff;
+    color:#aacff8;
 `;
 
 
