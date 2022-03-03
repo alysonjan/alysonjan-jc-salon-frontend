@@ -12,7 +12,6 @@ export const MainAuthPageContainer = styled.div`
 `;
 
 export const AuthCardContainer = styled.div`
-    border-radius: 5px;
     width: ${({ width })=> width};
     filter: drop-shadow(4px 12px 40px rgba(0, 0, 0, 0.15));
     display: flex;
