@@ -91,6 +91,7 @@ export const UserIconContainer = styled.div`
     right: 0;
     transform: translate(-100%, 35%);
 
+
 `
 
 export const UserIcon = styled.div`

@@ -63,6 +63,9 @@ const ServiceHistoryTable = () => {
                         draggable: false,
                         sorting: false,
                         search:false,
+                        pageSize: 7,
+                        pageSizeOptions:[5],
+                        emptyRowsWhenPaging: false, 
                         actionsColumnIndex: -1,
                         rowStyle: {
                         backgroundColor: '#EEE',

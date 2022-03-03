@@ -5,7 +5,7 @@ export const TitleContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 2%;
+    margin-top: 20px;
 `
 
 export const Title = styled.div`

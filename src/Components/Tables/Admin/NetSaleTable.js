@@ -57,6 +57,9 @@ const NetSaleTable = () => {
                         draggable: false,
                         sorting: false,
                         search:false,
+                        pageSize: 5,
+                        pageSizeOptions:[5],
+                        emptyRowsWhenPaging: false, 
                         actionsColumnIndex: -1,
                         rowStyle: {
                         backgroundColor: '#EEE',

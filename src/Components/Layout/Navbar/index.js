@@ -52,7 +52,7 @@ const Navbar = () => {
                         </NavItem>
                         <NavItem>
                             <NavLinks to={HAIRPRODUCTS}>Hair Color</NavLinks>
-            .            </NavItem>
+                       </NavItem>
                         </>
                         }
                         {userRole === ADMIN && 

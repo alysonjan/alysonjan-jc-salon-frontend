@@ -65,6 +65,9 @@ const CommissionTable = () => {
                         draggable: false,
                         sorting: false,
                         search:true,
+                        pageSize: 7,
+                        pageSizeOptions:[5],
+                        emptyRowsWhenPaging: false, 
                         actionsColumnIndex: -1,
                         rowStyle: {
                         backgroundColor: '#EEE',
