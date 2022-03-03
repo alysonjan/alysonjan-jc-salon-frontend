@@ -4,7 +4,6 @@ import { Button } from '../../Components/Shared/Button'
 import { TableContainer } from '../../Components/Shared/Table'
 import ServiceTable from '../../Components/Tables/ServiceTable'
 import { MainPageContainer } from '../../Components/Shared/MainPageContainer'
-import dayjs from 'dayjs'
 import { Option, Select } from '../../Components/Shared/SelectOption'
 import { Title, TitleContainer } from '../../Components/Shared/Title'
 import { Form, FormContainer } from '../../Components/Shared/Form'
@@ -14,7 +13,7 @@ import { SuccessMsg, SuccessMsgContainer } from '../../Components/Shared/Success
 import { StyledInput } from '../../Components/Shared/StyledInput'
 
 const ServicePage = () => {
-    var date = dayjs().format('dddd, MMMM DD, YYYY');
+    var date = new Date().toDateString('en-US', { timeZone: 'Asia/Manila' });
 
     const [data, setData] = useState([]);
     const [messageBox, setMessageBox] = useState('');
