@@ -66,7 +66,7 @@ const SignInPage = () => {
     return (
         <MainAuthPageContainer>
             <AuthCardContainer width="100%">
-                <AuthCardTitle>JC SALON SYSTEM</AuthCardTitle>
+                <AuthCardTitle>SALON SYSTEM</AuthCardTitle>
                 <AuthCardSubtitle>Login to get access to your files</AuthCardSubtitle>
                 <AuthContentForm onSubmit={onLoginHandler} >
                 <LoginStyledInput

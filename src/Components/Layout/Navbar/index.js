@@ -43,7 +43,7 @@ const Navbar = () => {
             <>
             <Nav>
                 <NavbarContainer>
-                        <NavLogo>JC SALON</NavLogo>
+                        <NavLogo>MY SALON</NavLogo>
                     <NavMenu>
                         {userRole === EMPLOYEE && 
                         <>
